@@ -3,14 +3,14 @@
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.4.0
+    rev: v4.1.0
     hooks:
       - id: check-yaml
       - id: check-json
       - id: trailing-whitespace
 
   - repo: https://github.com/psf/black
-    rev: 20.8b1
+    rev: 22.1.0
     hooks:
       - id: black
         language_version: python3
@@ -19,8 +19,8 @@ repos:
         entry: black
         types: [python]
 
-  - repo: https://github.com/pre-commit/mirrors-isort
-    rev: "v5.6.4" # Use the revision sha / tag you want to point at
+  - repo: https://github.com/PyCQA/isort
+    rev: "5.10.1" # Use the revision sha / tag you want to point at
     hooks:
       - id: isort
         name: isort
